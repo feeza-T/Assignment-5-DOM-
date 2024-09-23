@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-bg': '#B4F461',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <header class=" md:container mx-auto ">
+        <div class="navbar bg-base-200 flex">
+            <div class="navbar-start">
+                <a href="index.html" class="btn bg-btn-bg font-bold">Home</a>
+    
+            </div>
+            <div class="navbar-center">
+                <img src="assets/logo.png" alt="">
+                <a class="btn btn-ghost text-xl font-bold">Donate Bangladesh</a>
+            </div>
+            <div class="navbar-end">
+                <div class="stats">
+                    <div class="stat flex px-3 py-3">
+                      <img src="assets/coin.png" alt="">
+                      <div id="main-balance" class="stat-value text-xl ">5500 BDT</div>
+                      
+                    </div>
+                  </div>
+            </div>
+          </div>
+         
+   </header>
+   <main class="md:container mx-auto p-10">
+    <h1 class="font-bold text-2xl">Important FAQ</h1>
+    <div class="collapse collapse-arrow shadow-2xl mt-10">
+        <input type="radio" name="my-accordion-3 " checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the DOM in web development?</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, where each object corresponds to a part of the document (e.g., elements, attributes, text). JavaScript can manipulate the DOM to change the content, structure, or style of a webpage dynamically.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow shadow-2xl mt-10 ">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">How can you select an HTML element using JavaScript in the DOM?</div>
+        <div class="collapse-content">
+          <p> You can select an HTML element using various DOM methods. The most commonly used ones are:
+            document.getElementById('id') – Selects an element by its id attribute.
+            document.querySelector('selector') – Selects the first element that matches a CSS selector.
+            document.getElementsByClassName('class') – Selects elements by their class name.
+            document.getElementsByTagName('tag') – Selects elements by their tag name.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow shadow-2xl mt-10">
+        <input type="radio" name="my-accordion-3 " />
+        <div class="collapse-title text-xl font-medium">How can you modify the content of an HTML element using the DOM?</div>
+        <div class="collapse-content">
+          <p>You can modify the content of an HTML element by setting its innerHTML or innerText property</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow shadow-2xl mt-10">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p>Event delegation is a technique where you add a single event listener to a parent element, and that listener handles events triggered by its child elements. It is useful for efficiently handling events on dynamically added elements or when you have many child elements to manage. Instead of adding an event listener to each individual child, you add one to the parent and let events bubble up.</p>
+        </div>
+    </div>
+    
+   </main>
+</body>
+</html>

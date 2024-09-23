@@ -24,7 +24,8 @@
   <header class=" md:container mx-auto ">
     <div class="navbar bg-base-200">
         <div class="navbar-start">
-            <a class="btn bg-btn-bg font-bold">Blog</a>
+            <a href="Blog.html" class="btn bg-btn-bg font-bold">Blog</a>
+
         </div>
         <div class="navbar-center">
             <img src="assets/logo.png" alt="">
@@ -34,7 +35,7 @@
             <div class="stats">
                 <div class="stat flex px-3 py-3">
                   <img src="assets/coin.png" alt="">
-                  <div class="stat-value text-xl">5500 BDT</div>
+                  <div id="main-balance" class="stat-value text-xl ">5500 BDT</div>
                   
                 </div>
               </div>
@@ -87,17 +88,17 @@
                         <div class="stats">
                             <div class="stat flex px-3 py-3 bg-gray-200">
                               <img src="assets/coin.png" alt="">
-                              <div class="stat-value text-xl ">600 BDT</div>          
+                              <div id="acc-balance2" class="stat-value text-xl ">600 BDT</div>          
                             </div>
                           </div>
                         <h1 class="font-bold text-xl py-5">Donate for Flood Relief in Feni,Bangladesh</h1>
                         <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                         <!-- input field -->
                         <input
-                        type="text"
+                        type="text" id="input-addMoney2"
                         placeholder="Write Donation Amount"
                         class="input input-bordered w-full my-5" />
-                        <button class="btn btn-block bg-btn-bg font-bold text-xl">Donate Now</button>
+                        <button id="btn-addMoney2" class="btn btn-block bg-btn-bg font-bold text-xl">Donate Now</button>
                     </div>
                 </div>
               </div>
@@ -115,25 +116,30 @@
                         <div class="stats">
                             <div class="stat flex px-3 py-3 bg-gray-200">
                               <img src="assets/coin.png" alt="">
-                              <div class="stat-value text-xl ">2400 BDT</div>          
+                              <div id="acc-balance3" class="stat-value text-xl ">2400 BDT</div>          
                             </div>
                           </div>
                         <h1 class="font-bold text-xl py-5">Aid for Injured in the Quota Movement</h1>
                         <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                         <!-- input field -->
                         <input
-                        type="text"
+                        type="text" id="input-addMoney3"
                         placeholder="Write Donation Amount"
                         class="input input-bordered w-full my-5" />
-                        <button class="btn btn-block bg-btn-bg font-bold text-xl">Donate Now</button>
+                        <button id="btn-addMoney3" class="btn btn-block bg-btn-bg font-bold text-xl">Donate Now</button>
                     </div>
                 </div>
               </div>
         </div>
 
+   
+
 
     </main>
     <script src="addMoney.js"></script>
+    <script src="cashOut.js"></script>
+    <script src="Blog.html"></script>
+  
     
 </body>
 </html>
