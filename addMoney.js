@@ -13,11 +13,24 @@ document.getElementById('btn-addMoney1').addEventListener('click', function(even
         const newBalance = addMoneyNumber + balanceNumber;
         document.getElementById('acc-balance1').innerText = newBalance + ' BDT'; 
 
-        document.getElementById(inputId).value = '';
+        //add to transition history
+        const p=document.createElement('p');
+       let noa=document.getElementById("Noakhali").innerText;
+       p.innerText=`${addMoneyNumber} Taka is added for ${noa}.` ;
+
+       
+       //date
+        const now = new Date();
+        const dateTime = ` Date: ${now.toLocaleDateString()} at ${now.toLocaleTimeString()} (Bangladesh Standard Time)`;
+        p.innerText += dateTime;
+        document.getElementById('transition-id').appendChild(p);
+
+        //clear input
+        document.getElementById(input-addMoney).value = '';
 
     }
     else {
-        document.getElementById(inputId).value = '';
+        document.getElementById(input-addMoney).value = '';
         alert("Please enter a valid donation amount.");
     }
 });
@@ -36,12 +49,25 @@ document.getElementById('btn-addMoney2').addEventListener('click', function(even
     if (!isNaN(addMoneyNumber2) && !isNaN(balanceNumber2) && addMoneyNumber2>=0) {
         const newBalance2 = addMoneyNumber2 + balanceNumber2;
         document.getElementById('acc-balance2').innerText = newBalance2 + ' BDT'; 
+       //add to transition history
+       const p = document.createElement('p');
 
-        document.getElementById(inputId).value = '';
+       let feni = document.getElementById("Feni").innerText;
+       p.innerText = `${addMoneyNumber2} Taka is added for ${feni}`;
+       document.getElementById('transition-id').appendChild(p);
+
+        //date
+        const now = new Date();
+        const dateTime = ` Date: ${now.toLocaleDateString()} at ${now.toLocaleTimeString()} (Bangladesh Standard Time)`;
+        p.innerText += dateTime;
+        document.getElementById('transition-id').appendChild(p);
+
+         //clear input
+        document.getElementById(input-addMoney2).value = '';
 
     }
     else {
-        document.getElementById(inputId).value = '';
+        document.getElementById(input-addMoney2).value = '';
         alert("Please enter a valid donation amount.");
     }
 });
@@ -60,12 +86,27 @@ document.getElementById('btn-addMoney3').addEventListener('click', function(even
     if (!isNaN(addMoneyNumber3) && !isNaN(balanceNumber3) && addMoneyNumber3>=0) {
         const newBalance3 = addMoneyNumber3 + balanceNumber3;
         document.getElementById('acc-balance3').innerText = newBalance3 + ' BDT'; 
+        
+         //add to transition history
+         const p=document.createElement('p');
 
-        document.getElementById(inputId).value = '';
+         let quota=document.getElementById("Quota").innerText;
+         p.innerText=`${addMoneyNumber3} Taka is added for ${quota}` ;
+         document.getElementById('transition-id').appendChild(p);
+ 
+          //date
+        const now = new Date();
+        const dateTime = ` Date: ${now.toLocaleDateString()} at ${now.toLocaleTimeString()} (Bangladesh Standard Time)`;
+        p.innerText += dateTime;
+        document.getElementById('transition-id').appendChild(p);
+        
+         //clear input
+        document.getElementById(input-addMoney3).value = '';
 
     }
     else {
-        document.getElementById(inputId).value = '';
+        document.getElementById(input-addMoney3).value = '';
         alert("Please enter a valid donation amount.");
     }
 });
+
