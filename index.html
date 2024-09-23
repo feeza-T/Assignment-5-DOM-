@@ -42,13 +42,15 @@
         </div>
       </div>
       <div class="flex justify-center gap-5 py-5">
-        <button class="btn bg-btn-bg">Donation</button>
-        <button class="btn">History</button>
+        <button id="btn-donation" class="btn bg-btn-bg">Donation</button>
+        <button id="btn-history"  class="btn">History</button>
       </div>
   </header>
     <main class="md:container mx-auto ">
-        <!-- first card -->
-        <div>
+      <!-- Donation page -->
+       <div id="donation-page">
+          <!-- first card -->
+          <div>
             <div class="hero min-h-screen shadow-2xl">
                 <div class="hero-content flex-col lg:flex-row">
                   <img
@@ -131,14 +133,20 @@
                 </div>
               </div>
         </div>
+       </div>
 
-   
+   <!-- History section -->
+
+   <div id="history-page">
+    <h2>Transition</h2>
+   </div>
 
 
     </main>
     <script src="addMoney.js"></script>
     <script src="cashOut.js"></script>
     <script src="Blog.html"></script>
+    <script src="features.js"></script>
   
     
 </body>
