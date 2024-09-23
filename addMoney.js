@@ -1,3 +1,13 @@
+
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('blurred'); // Add blurred class when scrolling
+    } else {
+        navbar.classList.remove('blurred'); // Remove when at the top
+    }
+});
+
 document.getElementById('btn-addMoney1').addEventListener('click', function(event){
     event.preventDefault();
 
@@ -99,7 +109,7 @@ document.getElementById('btn-addMoney3').addEventListener('click', function(even
         const dateTime = ` Date: ${now.toLocaleDateString()} at ${now.toLocaleTimeString()} (Bangladesh Standard Time)`;
         p.innerText += dateTime;
         document.getElementById('transition-id').appendChild(p);
-        
+
          //clear input
         document.getElementById(input-addMoney3).value = '';
 
