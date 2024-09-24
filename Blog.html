@@ -19,29 +19,30 @@
     }
   </script>
 </head>
-<body>
-    <header class=" md:container mx-auto ">
-        <div class="navbar bg-base-200 flex">
-            <div class="navbar-start">
-                <a href="index.html" class="btn bg-btn-bg font-bold">Home</a>
-    
-            </div>
-            <div class="navbar-center">
-                <img src="assets/logo.png" alt="">
-                <a class="btn btn-ghost text-xl font-bold">Donate Bangladesh</a>
-            </div>
-            <div class="navbar-end">
-                <div class="stats">
-                    <div class="stat flex px-3 py-3">
-                      <img src="assets/coin.png" alt="">
-                      <div id="main-balance" class="stat-value text-xl ">5500 BDT</div>
-                      
-                    </div>
-                  </div>
+<body class="pt-16">
+    <header class="md:container mx-auto fixed top-0 left-0 right-0 z-50">
+        <div class="navbar bg-base-200 ">
+          <div class="navbar-start">
+            <a href="index.html" class="btn bg-btn-bg font-bold">Home</a>
+          </div>
+          <div class="navbar-center">
+            <img src="assets/logo.png" alt="" />
+            <a class="btn btn-ghost text-xl font-bold">Donate Bangladesh</a>
+          </div>
+          <div class="navbar-end">
+            <div class="stats">
+              <div class="stat flex px-3 py-3 ">
+                <img src="assets/coin.png" alt="" />
+                <div id="main-balance" class="stat-value text-xl">500 BDT</div>
+              </div>
             </div>
           </div>
-         
-   </header>
+        </div>
+        <div class="flex justify-center gap-5 py-5 bg-white">
+          <button id="btn-donation" class="btn bg-btn-bg">Donation</button>
+          <button id="btn-history" class="btn">History</button>
+        </div>
+      </header>
    <main class="md:container mx-auto p-10">
     <h1 class="font-bold text-2xl">Important FAQ</h1>
     <div class="collapse collapse-arrow shadow-2xl mt-10">
@@ -79,5 +80,10 @@
     </div>
     
    </main>
+ 
+   <script src="addMoney.js"></script>
+    <script src="cashOut.js"></script>
+    <script src="Blog.html"></script>
+    <script src="features.js"></script>
 </body>
 </html>
